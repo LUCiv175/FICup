@@ -1,0 +1,466 @@
+html, body{
+	min-height: 100%;
+}
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://library.sportingnews.com/2023-02/GettyImages-1397049599%281%29.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+body{
+    overflow-x: hidden;
+
+}
+
+.inizio{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    background-color: rgba(0, 0, 0, 0.452);
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 5vh;
+    border: 2px solid #DE2B38;
+    
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 25vh;
+
+}
+h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #f2f2f2;
+
+}
+form{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    margin-top: 2vh;
+}
+input[type="submit"]{
+    -webkit-appearance: none;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #DE2B38;
+    margin-bottom: 2vh;
+    padding-left: 10px;
+    background-color: #DE2B38;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 12px;
+}
+@media (hover: hover) {
+	input[type="submit"]:hover{
+		-webkit-appearance: none;
+    	background-color: #f2f2f2;
+    	color: #DE2B38;
+    	transition: 0.5s;
+	}
+}
+
+table{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-collapse: collapse;
+    width: 100%;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid #DE2B38;
+    border-radius: 10px;
+}
+th{
+    color: #f2f2f2;
+    border: 2px solid #DE2B38;
+    border-radius: 10px;
+}
+tr:nth-child(odd){
+    color: #f2f2f2;
+    border: 2px solid #DE2B38;
+    border-radius: 10px;
+}
+tr:nth-child(even){
+    color: #DE2B38;
+    border: 2px solid #DE2B38;
+    border-radius: 10px;
+}
+td{
+    
+    border-radius: 10px;
+}
+th, td{
+    padding: 10px;
+}
+tr{
+	background-color: rgba(0, 0, 0, 0.7);
+    -webkit-transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease;
+}
+tr:hover{
+    background-color: #de2b37b2;
+    color: #f2f2f2;
+    border: 2px solid #DE2B38;
+    border-radius: 10px;
+}
+.thead{
+    overflow-x: auto;
+    width: 100%;
+    margin-bottom: -2vh;
+}
+.tbody{
+    overflow:auto;
+    height: 500px;
+    width: 100%;
+    
+}
+h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+h3{
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+p{
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #f2f2f2;
+    
+    margin: 0;
+}
+h5{
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #f2f2f2;
+    
+    margin: 0;
+}
+.pos{
+	width: 15%;
+}
+.gol{
+ 	width: 15%;
+}
+.nome_squadra{
+width:35%;
+}
+.matchup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.452);
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 5vh;
+    border: 2px solid #DE2B38;
+    margin-bottom: 2vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 2vh;
+}
+.homeGoals{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 60%;
+}
+.awayGoals{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 60%;
+}
+.spinner {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    animation: spinner-3a5251 1.25s infinite linear;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.452);
+    border-radius: 100px;
+   }
+   
+   .spinner div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 3.6px solid transparent;
+    border-right: 3.6px solid transparent;
+    border-bottom: 10.8px solid #f2f2f2;
+    transform-origin: center 10.8px;
+
+   }
+   
+   .spinner div:before,
+   .spinner div:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    display: block;
+    border-left: 10.8px solid transparent;
+    border-right: 10.8px solid transparent;
+    border-bottom: 7.2px solid #f2f2f2;
+   }
+   
+   .spinner div:before {
+    transform: translate(-10.8px, 7.2px) rotate(35deg);
+   }
+   
+   .spinner div:after {
+    transform: translate(-10.8px, 7.2px) rotate(-35deg);
+   }
+   
+   .spinner div:nth-child(1) {
+    transform: translate(-50%, -10.8px) rotate(51.42857deg) translate(0, 320%);
+   }
+   
+   .spinner div:nth-child(2) {
+    transform: translate(-50%, -10.8px) rotate(102.85714deg) translate(0, 320%);
+   }
+   
+   .spinner div:nth-child(3) {
+    transform: translate(-50%, -10.8px) rotate(154.28571deg) translate(0, 320%);
+   }
+   
+   .spinner div:nth-child(4) {
+    transform: translate(-50%, -10.8px) rotate(205.71429deg) translate(0, 320%);
+   }
+   
+   .spinner div:nth-child(5) {
+    transform: translate(-50%, -10.8px) rotate(257.14286deg) translate(0, 320%);
+   }
+   
+   .spinner div:nth-child(6) {
+    transform: translate(-50%, -10.8px) rotate(308.57143deg) translate(0, 320%);
+   }
+   
+   .spinner div:nth-child(7) {
+    transform: translate(-50%, -10.8px) rotate(360deg) translate(0, 320%);
+   }
+   
+   @keyframes spinner-3a5251 {
+    to {
+     transform: rotate(360deg);
+    }
+   }
+   
+   a{
+         text-decoration: none;
+         color: #f2f2f2;
+   }
+   .campo{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Football_field.svg/1352px-Football_field.svg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    width: 50vw;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    border: 2px solid #DE2B38;
+    min-width: 680px;
+    
+    
+   }
+   .pedina{
+    border-radius: 50%;
+    background-color: #DE2B38;
+   }
+
+   .nomEtorna{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.452);
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 5vh;
+    border: 2px solid #DE2B38;
+    margin-bottom: 2vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 2vh;
+   }
+   img{
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    margin-bottom: 2vh;
+   }
+   input[type=button]{
+   -webkit-appearance: none;
+    background-color: #DE2B38;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: #f2f2f2;
+    font-size: 20px;
+    margin-top: 10px;
+   }
+    input[type=button]:hover{
+    -webkit-appearance: none;
+     background-color: #f2f2f2;
+     color: #DE2B38;
+     transition: 0.5s;
+     cursor: pointer;
+    }
+    .nomeTeam{
+        margin-bottom: 2vh;
+    }
+    .hid{
+        cursor: pointer;
+    }
+      @media screen and (max-width: 680px) {
+    table{
+        font-size: 15px;
+        width: 100%;    
+    }
+    th, td{
+        width: 50%;
+    }
+    .inizio{
+        width: 90%;
+        margin:auto;
+        margin-top: 50%;
+        margin-bottom: 50%;        
+   }
+   #risultati{
+    width: 90%;
+    margin:auto;
+   }
+   .matchup{
+    width: 90%;
+    margin:auto;
+    margin-bottom: 2%;
+   }
+   .matchup p{
+    font-size: 15px;
+   }
+   .goal_fatti, .goal_subiti, .dif_reti, .nome_squadra{
+    display: none;
+   }
+   .nomEtorna{
+    width: 90%;
+    margin:auto;
+    margin-bottom: 2%;
+    margin-top: 10%;
+    padding: 0;
+    padding-bottom: 5vh;
+
+    }
+    .giocatori{
+        width: 90%;
+        margin: 0;
+        margin:auto;
+    }
+    .nomeTeam{
+        font-size: 30px;
+    }
+    .homeGoals{
+        padding-right: 55%;
+    }
+    .awayGoals{
+        padding-left: 55%;
+    }
+    img{
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+        margin-bottom: 2vh;
+    }
+    }
+
+::-webkit-scrollbar {
+    display:none;
+}
+
+::-webkit-scrollbar-track {
+    display:none;
+}
+
+::-webkit-scrollbar-thumb {
+    display:none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    display:none;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    body {
+        background-image: -webkit-image-set(url(https://library.sportingnews.com/2023-02/GettyImages-1397049599%281%29.jpg) 1x);
+    }
+}
+.thead tr:hover, #int_table:hover{
+	color: #f2f2f2;
+    border: 2px solid #DE2B38;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
